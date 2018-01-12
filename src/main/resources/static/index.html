@@ -910,9 +910,9 @@
             // readyState == 4说明请求已完成
             if (obj.readyState == 4) {
                 if (obj.status == 200 || obj.status == 304) {
-                    $("#success").show();
+                    $("#success").fadeIn();
                     setTimeout(function(){
-                        $("#success").hide();
+                        $("#success").fadeOut();
                     },2000);
                 }
             }
