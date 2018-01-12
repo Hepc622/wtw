@@ -1,7 +1,10 @@
 <!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9" lang=""> <![endif]-->
 <!--[if gt IE 8]><!-->
 <html class="no-js" lang="">
 <!--<![endif]-->
@@ -14,34 +17,120 @@
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <!--Google fonts links-->
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i"
-        rel="stylesheet">
+          rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!--For Plugins external css-->
-    <link rel="stylesheet" href="css/plugins.css" />
-    <link rel="stylesheet" href="css/roboto-webfont.css" />
+    <link rel="stylesheet" href="css/plugins.css"/>
+    <link rel="stylesheet" href="css/roboto-webfont.css"/>
     <!--Theme custom css -->
     <link rel="stylesheet" href="css/style.css">
     <!--Theme Responsive css-->
     <link rel="stylesheet" href="css/responsive.css"/>
     <style>
-        <!--微信二维码图片位置-->
-        .wechat{margin-left: 17px;margin-top: 7px;border: 1px solid gray;}
+        .rightTool {
+            position: fixed;
+            right: 0;
+            top: 35%;
+            z-index: 50;
+            width: 76px;
+        }
+
+        .rightTool ul li {
+            width: 76px;
+            height: 76px;
+            position: relative;
+            float: left;
+        }
+
+        .rightTool ul li a img {
+            display: block;
+        }
+
+        .rightTool ul li .box {
+            display: none
+        }
+
+        .rightTool ul li .box .tl {
+            position: absolute;
+            right: 0;
+            top: 0;
+            display: inlnie-block;
+            width: 76px;
+            height: 76px;
+            background: #be1d1a;
+            font-size: 15px;
+            text-decoration: none;
+            color: #fff;
+            text-align: center;
+            padding-top: 24px;
+        }
+
+        .rightTool ul li .box .lx {
+            position: absolute;
+            right: 76px;
+            bottom: 0;
+            display: inline-block;
+            width: 133px;
+            height: 88px;
+            background: #be1d1a;
+            text-align: center;
+            padding-top: 1px;
+        }
+
+        .rightTool ul li .box .lx h3 {
+            font-size: 14px;
+            color: #fff;
+        }
+
+        .rightTool ul li .box .lx h4 {
+            font-size: 15px;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .rightTool ul li .box .scan {
+            position: absolute;
+            right: 0;
+            top: 0;
+            display: inlnie-block;
+            width: 76px;
+            height: 76px;
+            background: #be1d1a;
+            text-decoration: none;
+            font-size: 15px;
+            color: #fff;
+            text-align: center;
+            padding-top: 28px;
+        }
+
+        .rightTool ul li .box .wx {
+            position: absolute;
+            right: 76px;
+            bottom: 0;
+            display: inline-block;
+            width: 147px;
+            height: 151px;
+            background: #be1d1a;
+            text-align: center;
+            padding-top: 11px;
+        }
+
     </style>
 </head>
 <body>
-    <section id="social" class="social">
-            <div class="container">
-                <!-- Example row of columns -->
-                <div class="row">
-                    <div class="social-wrapper">
-                        <div class="col-md-6">
-                            <div class="social-icon">
-                                <a href="tencent://message/?uin=303907436&Site=303907436&menu=yes"><i class="fa fa-qq"></i></a>
-                                <a href="#"><i class="fa fa-wechat"></i></a>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="social-contact">
+<section id="social" class="social">
+    <div class="container">
+        <!-- Example row of columns -->
+        <div class="row">
+            <div class="social-wrapper">
+                <div class="col-md-6">
+                    <div class="social-icon">
+                        <a href="tencent://message/?uin=303907436&Site=303907436&menu=yes"><i class="fa fa-qq"></i></a>
+                        <a href="#"><i name="wechat" class="fa fa-wechat"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="social-contact">
 
                         <a href="#"><i class="fa fa-phone"></i>陈:13058576560，和工13790110387</a>
 
@@ -54,7 +143,8 @@
 
     </div> <!-- /container -->
 </section>
-<div name="wechatImg" class="card" style="width: 18rem" >
+<div name="wechatImg" class="card"
+     style="width: 18rem;display: none;position: absolute;z-index: 999;margin-left: 66px;">
     <img class="card-img-top wechat" src="http://www.runoob.com/wp-content/themes/runoob/assets/images/qrcode.png">
 </div>
 <nav class="navbar navbar-default">
@@ -620,13 +710,16 @@
                                 <span>Email: 303907436@qq.com</span>
                             </div>
 
-                            <div class="contact_socail_bookmark" >
+                            <div class="contact_socail_bookmark">
                                 <a href="tencent://message/?uin=303907436&Site=303907436&menu=yes"><i
                                         class="fa fa-qq"></i></a>
                                 <a><i name="wechat" class="fa fa-wechat"></i></a>
                             </div>
-                            <div name="wechatImg" class="card" style="width: 18rem;display: none" >
-                                <img class="card-img-top" src="http://www.runoob.com/wp-content/themes/runoob/assets/images/qrcode.png">
+                            <div name="wechatImg" class="card"
+                                 style="width: 18rem;display: none;position: absolute;z-index: 999;">
+                                <img class="card-img-top"
+                                     style="margin-left: 17px;margin-top: 7px;border: 1px solid #8a3b6a"
+                                     src="http://www.runoob.com/wp-content/themes/runoob/assets/images/qrcode.png">
                             </div>
                         </div>
                     </div>
@@ -710,6 +803,35 @@
 <div class="scrollup">
     <a href="#"><i class="fa fa-chevron-up"></i></a>
 </div>
+<div class="rightTool">
+    <ul>
+        <li>
+            <a target="blank" href="tencent://message/?uin=303907436&Site=303907436&menu=yes" title="客服"><img
+                    src="images/ico_1.png"></a>
+        </li>
+        <li>
+            <a href="javascript:;"><img src="images/ico_2.png"></a>
+            <div class="box" style="display: none;">
+                <a href="javascript:;" class="tl">联系<br>方式</a>
+                <div class="lx">
+                    <h3>全国免费热线</h3>
+                    <h4>0731-88153318</h4>
+                </div>
+            </div>
+        </li>
+        <li>
+            <a href="javascript:;"><img src="images/ico_3.png"></a>
+            <div class="box" style="display: none;">
+                <a href="javascript:;" class="scan">扫一扫</a>
+                <div class="wx">
+                    <img src="http://www.runoob.com/wp-content/themes/runoob/assets/images/qrcode.png">
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
+</body>
+</html>
 <script src="js/vendor/jquery-1.11.2.min.js"></script>
 <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 <script src="js/vendor/bootstrap.min.js"></script>
@@ -719,11 +841,18 @@
 <script type="text/javascript">
     $(document).ready(function () {
         $('.carousel').carousel()
-        $("i[name='wechat']").mouseover(function(){
-            $("div[name='wechatImg']").show();
+        $("i[name='wechat']").hover(function () {
+            $("div[name='wechatImg']").fadeIn().animate({opacity: "0.7"}, 1000);
+        }, function () {
+            $("div[name='wechatImg']").fadeOut().animate({opacity: "1"}, 1000);
         });
-        $("i[name='wechat']").mouseout(function(){
-            $("div[name='wechatImg']").hide();
+        // 右边悬浮的事件
+        $(".rightTool ul li").hover(function(){
+            $(".rightTool ul li .box").stop(false,true);
+            $(this).find(".box").fadeIn();
+        },function(){
+            $(".rightTool ul li .box").stop(false,true);
+            $(this).find(".box").fadeOut();
         });
     });
     function send() {
@@ -731,7 +860,7 @@
         var name_ = $("input[name='name']").val();
         var email_ = $("input[name='email']").val();
         var type_ = $("select[name='type']").val();
-        if(message_==""||message_==null||name_==""||name_==null||email_==""||email_==null||type_==null||type_==""){
+        if (message_ == "" || message_ == null || name_ == "" || name_ == null || email_ == "" || email_ == null || type_ == null || type_ == "") {
             return;
         }
         var data = {
@@ -756,5 +885,4 @@
         return false;
     }
 </script>
-</body>
-</html>
+
