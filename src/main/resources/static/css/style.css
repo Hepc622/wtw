@@ -323,6 +323,7 @@ Button
     padding: 12px 15px;
     max-width:160px;
     margin-top: 20px;
+    border-radius: 30px;
 }
 .btn-default:hover, .btn-default:focus, .btn-default.focus, .btn-default:active, .btn-default.active, .open>.dropdown-toggle.btn-default {
     color: #fff;

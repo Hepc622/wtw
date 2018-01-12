@@ -17,7 +17,7 @@
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <!--Google fonts links-->
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i"
-          rel="stylesheet">
+        rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!--For Plugins external css-->
     <link rel="stylesheet" href="css/plugins.css" />
@@ -115,10 +115,17 @@
             text-align: center;
             padding-top: 11px;
         }
+        .lineText{
+            display: inline-block;
+            white-space: nowrap;
+            width: 200px;
+            overflow: hidden;
+            text-overflow:ellipsis;
+        }
     </style>
 </head>
 <body>
-<section id="social" class="social">
+    <section id="social" class="social">
     <div class="container">
         <!-- Example row of columns -->
         <div class="row">
@@ -143,11 +150,11 @@
 
     </div> <!-- /container -->
 </section>
-<div name="wechatImg" class="card" style="width: 18rem; display: none; position: absolute;
+    <div name="wechatImg" class="card" style="width: 18rem; display: none; position: absolute;
         z-index: 999; margin-left: 66px;">
-    <img class="card-img-top wechat" src="http://www.runoob.com/wp-content/themes/runoob/assets/images/qrcode.png">
-</div>
-<nav class="navbar navbar-default">
+        <img class="card-img-top wechat" src="http://www.runoob.com/wp-content/themes/runoob/assets/images/qrcode.png">
+    </div>
+    <nav class="navbar navbar-default">
     <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -177,8 +184,8 @@
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
 </nav>
-<!--Home page style-->
-<header id="home" class="home">
+    <!--Home page style-->
+    <header id="home" class="home">
     <div id="myCarousel" class="carousel slide">
         <!-- 轮播（Carousel）指标 -->
         <ol class="carousel-indicators">
@@ -190,15 +197,15 @@
         <div class="carousel-inner">
             <div class="item active">
                 <img src="images/1.jpg" alt="First slide">
-                <div class="carousel-caption">标题 1</div>
+                <div class="carousel-caption"></div>
             </div>
             <div class="item">
                 <img src="images/2.jpg" alt="Second slide">
-                <div class="carousel-caption">标题 2</div>
+                <div class="carousel-caption"></div>
             </div>
             <div class="item">
                 <img src="images/3.jpg" alt="Third slide">
-                <div class="carousel-caption">标题 3</div>
+                <div class="carousel-caption"></div>
             </div>
         </div>
         <!-- 轮播（Carousel）导航 -->
@@ -208,8 +215,8 @@
            data-slide="next">&rsaquo;</a>
     </div>
 </header>
-<!-- Sections1 -->
-<section id="features" class="features sections">
+    <!-- Sections1 -->
+    <section id="features" class="features sections">
     <div class="container">
         <div class="row">
             <div class="main_features_content2">
@@ -220,16 +227,16 @@
                     </div>
                 </div>
 
-                <div class="col-sm-6 margin-top-60">
+                <div class="col-sm-6">
                     <div class="single_features_right ">
-                        <h2>企业资源规划(ERP)</h2>
-                        <p style="font-style:inherit">个案,外挂开发,实施,培训,维护</p>
+                        <h2> 企业资源规划(ERP)</h2>
+                        <p style="font-style:inherit">实施,培训,维护</p>
                         <ul>
                             <li>易飞ERP</li>
                             <li>易助ERP</li>
                             <li>正航ERP</li>
-                            <li>集成供应商协同平台系统</li>
-                            <li>其它集成系统</li>
+                            <li>供应商协同平台系统</li>
+                            
                         </ul>
                         <div class="features_buttom">
                             <a href="" class="btn btn-default">咨询</a>
@@ -241,30 +248,30 @@
         </div>
     </div>
 </section>
-<!--End of Features 2 Section -->
-<section id="features" class="features sections">
+    <!--End of Features 2 Section -->
+    <section id="features" class="features sections">
     <div class="container">
         <div class="row">
             <div class="main_features_content2">
                 <div class="col-sm-6 margin-top-60">
-                    <div class="single_features_right ">
-                        <h2>定制软件开发</h2>
+                    <div class="single_features_right" style="padding-left: 100px">
+                     <h2>定制软件开发</h2>
                         <p>描述</p>
                         <ul>
-                            <!--        <li>文件管理系统</li>
-                                    <li>注塑车间MES</li>
-                                    <li>人工智能设备</li>
-                                    <li>232通信编程</li>
-                                    <li>C#控件,接口开发</li>-->
+                            <li>ERP系统外挂开发</li>
+                            <li>易飞个案</li>
+                            <li>人工智能设备</li>
+                            <li>232通信编程</li>
+                            <li>C#控件,接口开发</li>
                         </ul>
                         <div class="features_buttom">
-                            <a href="" class="btn btn-default">Read More</a>
+                            <a href="" class="btn btn-default">咨询</a>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6">
+                <div class="col-sm-6 margin-top-60">
                     <div class="single_features_left text-center">
-                        <img src="images/feature-2.jpg" alt=""/>
+                        <img src="images/A_1.jpg" alt=""/>
                     </div>
                 </div>
 
@@ -272,9 +279,9 @@
         </div>
     </div>
 </section>
-<!--End of Features 2 Section -->
-<!-- Sections 3-->
-<section id="features" class="features sections">
+    <!--End of Features 2 Section -->
+    <!-- Sections 3-->
+    <section id="features" class="features sections">
     <div class="container">
         <div class="row">
             <div class="main_features_content2">
@@ -285,9 +292,9 @@
                     </div>
                 </div>
 
-                <div class="col-sm-6 margin-top-60">
+                <div class="col-sm-6">
                     <div class="single_features_right ">
-                        <h2>网站开发,APP程序,微信公众号</h2>
+                     <h2>网站开发,APP程序,微信公众号</h2>
                         <p>描述</p>
                         <ul>
                             <li>功能网页</li>
@@ -305,14 +312,14 @@
         </div>
     </div>
 </section>
-<!--End of Features 2 Section -->
-<section id="service" class="service2 sections lightbg">
+    <!--End of Features 2 Section -->
+    <section id="service" class="service2 sections lightbg">
     <div class="container">
         <div class="row">
             <div class="main_service2">
                 <div class="head_title text-center">
                     <h2>行业解决方案</h2>
-                    <p>condimentum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
+                    <p>专业团队解决行业专业问题</p>
                 </div>
 
                 <div class="service_content">
@@ -323,7 +330,9 @@
                             </div>
                             <div class="single_service_right">
                                 <h2>注塑,硅胶行业</h2>
-                                <p>1模多穴,水口料,</p>
+                                <p>多模多穴管理</p>
+                                <p>工艺管理</p>
+                                <p>料件管理</p>
                             </div>
                         </div>
                     </div>
@@ -333,11 +342,14 @@
                                 <img src="images/flaticon2.png" alt=""/>
                             </div>
                             <div class="single_service_right">
-                                <h2>五金行业</h2>
-                                <p>工艺杂</p>
+                                <h2>五金加工行业</h2>
+                                <p>工艺路线复杂</p>
+                                <p>材料用料管理</p>
+                                <p>设备管理</p>
                             </div>
                         </div>
                     </div>
+
                     <div class="col-md-6 col-sm-6">
                         <div class="single_service2">
                             <div class="single_service_left">
@@ -345,10 +357,12 @@
                             </div>
                             <div class="single_service_right">
                                 <h2>电子,组装行业</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.</p>
+                                <p>BOM阶级多</p>
+                                <p>料号多</p>
                             </div>
                         </div>
                     </div>
+
                     <div class="col-md-6 col-sm-6">
                         <div class="single_service2">
                             <div class="single_service_left">
@@ -356,7 +370,8 @@
                             </div>
                             <div class="single_service_right">
                                 <h2>纸品行业</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.</p>
+                                <p>用料计算</p>
+                                
                             </div>
                         </div>
                     </div>
@@ -365,15 +380,14 @@
         </div>
     </div>
 </section>
-<!-- End of Service2 Section -->
-<!-- Sections -->
-<section id="price" class="price sections">
+    <!-- End of Service2 Section -->
+    <!-- Sections -->
+    <section id="price" class="price sections">
 
 
     <div class="head_title text-center">
         <h1>精选案列</h1>
-        <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, est non commodo luctus, nisi
-            erat porttitor ligula.</p>
+        <p>成功案列摘选</p>
     </div>
 
 
@@ -397,24 +411,26 @@
                             <h2>注塑MES系统</h2>
 
                             <div class="cd-price">
-                                <!--       <span class="cd-currency">$</span>
-                                       <span class="cd-value">30</span>
-                                       <span class="cd-duration">mo</span>-->
+                         <!--       <span class="cd-currency">$</span>
+                                <span class="cd-value">30</span>
+                                <span class="cd-duration">mo</span>-->
                             </div>
                         </header> <!-- .cd-pricing-header -->
 
                         <div class="cd-pricing-body">
                             <ul class="cd-pricing-features">
-                                <li><em><i class="fa fa-check-circle"></i></em>机台管理</li>
+
+                                <li><em><i class="fa fa-check-circle"></i></em>机台及在制品管理</li>
                                 <li><em><i class="fa fa-check-circle"></i></em>生产进度管理</li>
                                 <li><em><i class="fa fa-check-circle"></i></em>计件管理</li>
+                 
                                 <li><em><i class="fa fa-check-circle"></i></em>模具管理</li>
 
                             </ul>
                         </div> <!-- .cd-pricing-body -->
 
                         <footer class="cd-pricing-footer">
-                            <a class="cd-select" href="#">Purchase</a>
+                            <a class="cd-select" target="_blank"  href="MesZhusu.htm">DEMO</a>
                         </footer>  <!-- .cd-pricing-footer -->
                     </li>
 
@@ -423,17 +439,17 @@
                             <h2>HR网页版</h2>
 
                             <div class="cd-price">
-                                <!--         <span class="cd-currency">$</span>
-                                         <span class="cd-value">320</span>
-                                         <span class="cd-duration">yr</span>-->
+                       <!--         <span class="cd-currency">$</span>
+                                <span class="cd-value">320</span>
+                                <span class="cd-duration">yr</span>-->
                             </div>
                         </header> <!-- .cd-pricing-header -->
 
                         <div class="cd-pricing-body">
                             <ul class="cd-pricing-features">
                                 <li><em><i class="fa fa-check-circle"></i></em>员工管理</li>
-                                <li><em><i class="fa fa-remove"></i></em>考勤管理</li>
-                                <li><em><i class="fa fa-remove"></i></em>薪资管理</li>
+                                <li><em><i class="fa fa-check-circle"></i></em>考勤管理</li>
+                                <li><em><i class="fa fa-check-circle"></i></em>薪资管理</li>
                                 <li><em><i class="fa fa-check-circle"></i></em>计件管理</li>
 
                             </ul>
@@ -452,9 +468,9 @@
                         <header class="cd-pricing-header">
                             <h2>条码管理</h2>
                             <div class="cd-price">
-                                <!--     <span class="cd-currency">$</span>
-                                     <span class="cd-value">60</span>
-                                     <span class="cd-duration">mo</span>-->
+                           <!--     <span class="cd-currency">$</span>
+                                <span class="cd-value">60</span>
+                                <span class="cd-duration">mo</span>-->
                             </div>
                         </header> <!-- .cd-pricing-header -->
 
@@ -478,18 +494,18 @@
                             <h2>OA系统</h2>
 
                             <div class="cd-price">
-                                <!--       <span class="cd-currency">$</span>
-                                       <span class="cd-value">630</span>
-                                       <span class="cd-duration">yr</span>-->
+                         <!--       <span class="cd-currency">$</span>
+                                <span class="cd-value">630</span>
+                                <span class="cd-duration">yr</span>-->
                             </div>
                         </header> <!-- .cd-pricing-header -->
 
                         <div class="cd-pricing-body">
                             <ul class="cd-pricing-features">
-                                <li><em><i class="fa fa-check-circle"></i></em></li>
-                                <li><em><i class="fa fa-remove"></i></em>No Time Tracking</li>
-                                <li><em><i class="fa fa-remove"></i></em>230 - Man Hour</li>
-                                <li><em><i class="fa fa-check-circle"></i></em>News Letter Available</li>
+                                <li><em><i class="fa fa-check-circle"></i></em>自定义单据流</li>
+                                <li><em><i class="fa fa-check-circle"></i></em>绩效管理</li>
+                                <li><em><i class="fa fa-check-circle"></i></em>杂费管理</li>
+                                <li><em><i class="fa fa-check-circle"></i></em>外进人员管理</li>
 
                             </ul>
                         </div> <!-- .cd-pricing-body -->
@@ -508,17 +524,17 @@
                             <h2>文件管理</h2>
 
                             <div class="cd-price">
-                                <!--       <span class="cd-currency">$</span>
-                                       <span class="cd-value">90</span>
-                                       <span class="cd-duration">mo</span>-->
+                         <!--       <span class="cd-currency">$</span>
+                                <span class="cd-value">90</span>
+                                <span class="cd-duration">mo</span>-->
                             </div>
                         </header> <!-- .cd-pricing-header -->
 
                         <div class="cd-pricing-body">
                             <ul class="cd-pricing-features">
                                 <li><em><i class="fa fa-check-circle"></i></em>图纸安全</li>
-                                <li><em><i class="fa fa-remove"></i></em>图纸版本控制</li>
-                                <li><em><i class="fa fa-remove"></i></em>信息通知(邮件,微信,短信)</li>
+                                <li><em><i class="fa fa-check-circle"></i></em>图纸版本控制</li>
+                                <li><em><i class="fa fa-check-circle"></i></em>信息通知(邮件,微信,短信)</li>
                                 <li><em><i class="fa fa-check-circle"></i></em>用户权限管理</li>
 
                             </ul>
@@ -534,18 +550,18 @@
                             <h2>项目管理软件</h2>
 
                             <div class="cd-price">
-                                <!--     <span class="cd-currency">$</span>
-                                     <span class="cd-value">950</span>
-                                     <span class="cd-duration">yr</span>-->
+                           <!--     <span class="cd-currency">$</span>
+                                <span class="cd-value">950</span>
+                                <span class="cd-duration">yr</span>-->
                             </div>
                         </header> <!-- .cd-pricing-header -->
 
                         <div class="cd-pricing-body">
                             <ul class="cd-pricing-features">
-                                <li><em><i class="fa fa-check-circle"></i></em>20 Keyword</li>
-                                <li><em><i class="fa fa-remove"></i></em>No Time Tracking</li>
-                                <li><em><i class="fa fa-remove"></i></em>230 - Man Hour</li>
-                                <li><em><i class="fa fa-check-circle"></i></em>News Letter Available</li>
+                                <li><em><i class="fa fa-check-circle"></i></em>项目费用管理</li>
+                                <li><em><i class="fa fa-check-circle"></i></em>项目计划管理</li>
+                                <li><em><i class="fa fa-check-circle"></i></em>项目进度管理</li>
+                                <li><em><i class="fa fa-check-circle"></i></em></li>
 
                             </ul>
                         </div> <!-- .cd-pricing-body -->
@@ -560,50 +576,49 @@
     </div> <!-- .cd-pricing-container -->
 
 </section>
-<!-- Sections -->
-<section id="business" class="portfolio sections">
+    <!-- Sections -->
+    <section id="business" class="portfolio sections">
     <div class="container">
         <div class="head_title text-center">
             <h1>团队信息</h1>
-            <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, est non commodo luctus,
-                nisi erat porttitor ligula.</p>
+            <p >团队信息描述</p>
         </div>
 
         <div class="row">
             <div class="portfolio-wrapper text-center">
                 <div class="col-md-3 col-sm-6 col-xs-12">
                     <div class="community-edition">
-                        <i class="fa fa-book"></i>
+                        <img style="width: 88px;height: 80px" src="images/user.png"/>
                         <div class="separator"></div>
                         <h4>项目架构师</h4>
-                        <p>擅长于ERP,MES等中小型系统架规划,提供各种解决方案</p>
+                        <p class="lineText" >擅长于ERP,MES等中小型系统架规划,提供各种解决方案</p>
                     </div>
                 </div>
 
                 <div class="col-md-3 col-sm-6 col-xs-12">
                     <div class="community-edition">
-                        <i class="fa fa-bug"></i>
+                        <img style="width: 88px;height: 80px" src="images/user.png"/>
                         <div class="separator"></div>
                         <h4>项目开发主管</h4>
-                        <p>以客户需求为</p>
+                        <p class="lineText">以客户需求为</p>
                     </div>
                 </div>
 
                 <div class="col-md-3 col-sm-6 col-xs-12">
                     <div class="community-edition">
-                        <i class="fa fa-gears"></i>
+                        <img style="width: 88px;height: 80px" src="images/user.png"/>
                         <div class="separator"></div>
                         <h4>高级开发员</h4>
-                        <p>CS/BS</p>
+                        <p class="lineText">CS/BS</p>
                     </div>
                 </div>
 
                 <div class="col-md-3 col-sm-6 col-xs-12">
                     <div class="community-edition">
-                        <i class="fa fa-external-link"></i>
+                        <img style="width: 88px;height: 80px" src="images/user2.png"/>
                         <div class="separator"></div>
                         <h4>UI设计师</h4>
-                        <p>待描述</p>
+                        <p class="lineText">待描述</p>
                     </div>
                 </div>
 
@@ -615,37 +630,37 @@
             <div class="portfolio-wrapper2 text-center">
                 <div class="col-md-3 col-sm-6 col-xs-12">
                     <div class="community-edition">
-                        <i class="fa fa-coffee"></i>
+                        <img style="width: 88px;height: 80px" src="images/user2.png"/>
                         <div class="separator"></div>
                         <h4>项目主管</h4>
-                        <p>待描述</p>
+                        <p class="lineText">待描述</p>
                     </div>
                 </div>
 
                 <div class="col-md-3 col-sm-6 col-xs-12">
                     <div class="community-edition">
-                        <i class="fa fa-tree"></i>
+                        <img style="width: 88px;height: 80px" src="images/user.png"/>
                         <div class="separator"></div>
                         <h4>项目主管</h4>
-                        <p>待描述</p>
+                        <p class="lineText">待描述</p>
                     </div>
                 </div>
 
                 <div class="col-md-3 col-sm-6 col-xs-12">
                     <div class="community-edition">
-                        <i class="fa fa-paper-plane-o"></i>
+                        <img style="width: 88px;height: 80px" src="images/user2.png"/>
                         <div class="separator"></div>
                         <h4>高级顾问</h4>
-                        <p>待描述</p>
+                        <p class="lineText">待描述</p>
                     </div>
                 </div>
 
                 <div class="col-md-3 col-sm-6 col-xs-12">
                     <div class="community-edition">
-                        <i class="fa fa-folder-open"></i>
+                        <img style="width: 88px;height: 80px" src="images/user.png"/>
                         <div class="separator"></div>
                         <h4>高级顾问</h4>
-                        <p>待描述</p>
+                        <p class="lineText">待描述</p>
                     </div>
                 </div>
 
@@ -653,14 +668,14 @@
         </div>
     </div> <!-- /container -->
 </section>
-<section id="contact" class="contact sections">
+    <section id="contact" class="contact sections">
     <div class="container">
         <div class="row">
             <div class="main_contact whitebackground">
                 <div class="head_title text-center">
                     <h2>联系我们</h2>
-                    <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, est non commodo
-                        luctus, nisi erat porttitor ligula.</p>
+                    <p>
+                    描述</p>
                 </div>
                 <div class="contact_content">
                     <div class="col-md-6">
@@ -726,8 +741,8 @@
         </div>
     </div>
 </section>
-<!-- End of Contact Section -->
-<section id="footer-menu" class="sections footer-menu">
+    <!-- End of Contact Section -->
+    <section id="footer-menu" class="sections footer-menu">
     <div class="container">
         <div class="row">
             <div class="footer-menu-wrapper">
@@ -783,8 +798,8 @@
         </div>
     </div>
 </section>
-<!--Footer-->
-<footer id="footer" class="footer">
+    <!--Footer-->
+    <footer id="footer" class="footer">
     <div class="container">
         <div class="row">
             <div class="footer-wrapper">
@@ -798,38 +813,38 @@
         </div>
     </div>
 </footer>
-<div class="scrollup">
-    <a href="#"><i class="fa fa-chevron-up"></i></a>
-</div>
-<div class="rightTool">
-    <ul>
-        <li><a target="blank" href="tencent://message/?uin=303907436&Site=303907436&menu=yes"
-               title="客服">
-            <img src="images/ico_1.png"></a> </li>
-        <li><a href="javascript:;">
-            <img src="images/ico_2.png"></a>
-            <div class="box" style="display: none;">
-                <a href="javascript:;" class="tl">联系<br>
-                    方式</a>
-                <div class="lx">
-                    <h3>
-                        全国免费热线</h3>
-                    <h4>
-                        0731-88153318</h4>
+    <div class="scrollup">
+        <a href="#"><i class="fa fa-chevron-up"></i></a>
+    </div>
+    <div class="rightTool">
+        <ul>
+            <li><a target="blank" href="tencent://message/?uin=303907436&Site=303907436&menu=yes"
+                title="客服">
+                <img src="images/ico_1.png"></a> </li>
+            <li><a href="javascript:;">
+                <img src="images/ico_2.png"></a>
+                <div class="box" style="display: none;">
+                    <a href="javascript:;" class="tl">联系<br>
+                        方式</a>
+                    <div class="lx">
+                        <h3>
+                            全国免费热线</h3>
+                        <h4>
+                            0731-88153318</h4>
+                    </div>
                 </div>
-            </div>
-        </li>
-        <li><a href="javascript:;">
-            <img src="images/ico_3.png"></a>
-            <div class="box" style="display: none;">
-                <a href="javascript:;" class="scan">扫一扫</a>
-                <div class="wx">
-                    <img src="http://www.runoob.com/wp-content/themes/runoob/assets/images/qrcode.png">
+            </li>
+            <li><a href="javascript:;">
+                <img src="images/ico_3.png"></a>
+                <div class="box" style="display: none;">
+                    <a href="javascript:;" class="scan">扫一扫</a>
+                    <div class="wx">
+                        <img src="http://www.runoob.com/wp-content/themes/runoob/assets/images/qrcode.png">
+                    </div>
                 </div>
-            </div>
-        </li>
-    </ul>
-</div>
+            </li>
+        </ul>
+    </div>
 </body>
 </html>
 <script src="js/vendor/jquery-1.11.2.min.js"></script>
@@ -877,7 +892,7 @@
             // readyState == 4说明请求已完成
             if (obj.readyState == 4) {
                 if (obj.status == 200 || obj.status == 304) {
-                    alert("发送成功");//提示弹框
+                    alert("发送成功")
                 }
             }
         };
