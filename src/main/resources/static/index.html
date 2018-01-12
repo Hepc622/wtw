@@ -122,6 +122,16 @@
             overflow: hidden;
             text-overflow:ellipsis;
         }
+        .mysuccess{
+            color: #3c763d;
+            background-color: #dff0d8;
+            border-color: #d6e9c6;
+            position: fixed;
+            margin-left: 40%;
+            top: 8%;
+            z-index: 50;
+            width: 248px;
+        }
     </style>
 </head>
 <body>
@@ -845,6 +855,9 @@
             </li>
         </ul>
     </div>
+    <div id="success" style="display: none"  class="alert alert-success mysuccess" role="alert">
+        提交成功，我们将尽快联系您！
+    </div>
 </body>
 </html>
 <script src="js/vendor/jquery-1.11.2.min.js"></script>
@@ -897,11 +910,15 @@
             // readyState == 4说明请求已完成
             if (obj.readyState == 4) {
                 if (obj.status == 200 || obj.status == 304) {
-                    alert("发送成功");
+                    $("#success").show();
+                    setTimeout(function(){
+                        $("#success").hide();
+                    },2000);
                 }
             }
         };
         obj.send(JSON.stringify(data)); // 发送post数据
+
         return false;
     }
 </script>
