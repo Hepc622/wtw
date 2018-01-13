@@ -564,6 +564,7 @@ textarea::-ms-input-placeholder
     -moz-background-size:cover;
     -o-background-size:cover;
     -ms-background-size:cover;
+    height: 550px;
 }
 .home-wrapper{
     padding:180px 0px;
