@@ -151,7 +151,7 @@
 
                         <a href="#"><i class="fa fa-phone"></i>陈:13058576560，和工13790110387</a>
 
-                        <a href="#"><i class="fa fa-envelope"></i>chenchuanwen@wtmes.com</a>
+                        <a href="#contact"><i class="fa fa-envelope"></i>chenchuanwen@wtmes.com</a>
 
                     </div>
                 </div>
@@ -183,9 +183,38 @@
 
             <ul class="nav navbar-nav navbar-right">
                 <li class="active"><a href="#home">网站主页</a></li>
-                <li><a href="#features">经营项目</a></li>
-                <li><a href="#service">解决方案</a></li>
-                <li><a href="#price">案列分享</a></li>
+                <li>
+                    <a href="#features">经营项目</a>
+                    <!--<ul>-->
+                        <!--<li><a href="#">易飞</a></li>-->
+                        <!--<li><a href="#">易助</a></li>-->
+                        <!--<li><a href="#">正航ERP实施</a></li>-->
+                    <!--</ul>-->
+                </li>
+                <li>
+                    <a href="#service">解决方案</a>
+                    <!--<ul>-->
+                        <!--<li><a href="#">电子行业</a></li>-->
+                        <!--<li><a href="#">注塑行业</a></li>-->
+                        <!--<li><a href="#">纸品行业</a></li>-->
+                        <!--<li><a href="#">LED类饰</a></li>-->
+                        <!--<li><a href="#">玻璃行业</a></li>-->
+                        <!--<li><a href="#">五金加工</a></li>-->
+                    <!--</ul>-->
+                </li>
+                <li>
+                    <a href="#price">案列分享</a>
+                    <ul>
+                        <li><a href="#">注塑MES</a></li>
+                        <li><a href="#">量具系统</a></li>
+                        <li><a href="#">条码管理系统</a></li>
+                        <li><a href="#">文件管理系统</a></li>
+                        <li><a href="#">人力管理系统</a></li>
+                        <li><a href="#">考勤管理系统</a></li>
+                        <li><a href="#">薪资管理系统</a></li>
+                        <li><a href="#">OA管理系统</a></li>
+                    </ul>
+                </li>
                 <li><a href="#business">团队介绍</a></li>
                 <li><a href="#contact">联系我们</a></li>
                 <!--  <li class="login"><a href="#">Sign In</a></li>-->
@@ -246,7 +275,6 @@
                             <li>易助ERP</li>
                             <li>正航ERP</li>
                             <li>供应商协同平台系统</li>
-                            
                         </ul>
                         <div class="features_buttom">
                             <a href="" class="btn btn-default">咨询</a>
@@ -275,7 +303,7 @@
                             <li>C#控件,接口开发</li>
                         </ul>
                         <div class="features_buttom">
-                            <a href="" class="btn btn-default">咨询</a>
+                            <a href="#contact" class="btn btn-default">咨询</a>
                         </div>
                     </div>
                 </div>
@@ -369,7 +397,7 @@
                             <li>微信公众号</li>
                         </ul>
                         <div class="features_buttom">
-                            <a href="" class="btn btn-default">详情</a>
+                            <a href="#contact" class="btn btn-default">咨询</a>
                         </div>
                     </div>
                 </div>
@@ -385,7 +413,7 @@
             <div class="main_service2">
                 <div class="head_title text-center">
                     <h2>行业解决方案</h2>
-                    <p>专业团队解决行业专业问题</p>
+                    <p>专业团队解决行业问题</p>
                 </div>
 
                 <div class="service_content">
@@ -950,24 +978,33 @@
         }
         var re = /^1\d{10}$/;
         if (!re.test(phone_)) {
-            alert("手机号格式错误！");
+            $("#success").html("手机号码格式错误")
+            $("#success").fadeIn();
+            setTimeout(function(){
+                $("#success").fadeOut();
+            },2000);
             return;
         }
-        $.post("./php/sendEmail.php",data,function(result){
-            if(result==1){
-                $("#success").fadeIn();
-                setTimeout(function(){
-                    $("#success").fadeOut();
-                },2000);
-            }else{
+        $.ajax({
+            url:"./php/sendEmail.php",
+            type:"post",
+            dataType:"json",
+            data:data,
+            timeout:5000,
+            error:function(result){
+                console.log(result)
                 $("#success").html("系统繁忙!")
                 $("#success").fadeIn();
                 setTimeout(function(){
                     $("#success").fadeOut();
                 },2000);
+            },
+            success:function(result){
+                $("#success").fadeIn();
+                setTimeout(function(){
+                    $("#success").fadeOut();
+                },2000);
             }
-
         });
-        return false;
     }
 </script>
